@@ -142,3 +142,69 @@ footer{
     display: none;
   }
 }
+
+/*SECOND MEDIA QUERY <470PX*/
+
+@media only screen and (max-width: 470px){
+
+  /*Black Bar*/
+  .top-logo img{
+    height: 1.5rem;
+    padding: 0px;
+    width: auto;
+  }
+  .top-logo .container{
+    justify-content: center;
+    width: 100%;
+  }
+  .top-logo span{
+    display: none;
+  }
+
+  /*Motorcycle Photo*/
+  .main-photo{
+    max-width: 100%;
+    height: 15rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  .headline{
+    padding: 1rem 2rem;
+    position: static;
+    width: 100%;
+  }
+  .headline h4{
+    margin-bottom: 0.77rem;
+  }
+  .headline h1{
+    font-size: 1rem;
+  }
+
+/*BUSINESS INFO*/
+.watch{
+  display: none;
+}
+.product{
+width: 90%;
+}
+.product-container .container{
+  justify-content: center;
+}
+
+/*BUSINESS INFO*/
+.location, .hours{
+  width: 90%;
+}
+.business-info .container{
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/*BOTTOM FOOTER BAR*/
+
+footer .container{
+  display: flex;
+  justify-content: center;
+}
+}
