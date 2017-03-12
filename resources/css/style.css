@@ -9,7 +9,9 @@ body{
 width: 960px;
 margin: 0px auto;
 }
-
+#mobile-nav{
+  display: none;
+}
 
 /*Black Bar*/
 .top-logo{
@@ -66,8 +68,6 @@ nav .container{
 .product-container .container{
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 .product-image img{
   max-width: 100%;
@@ -83,6 +83,8 @@ nav .container{
 .product{
 width: 30%;
 border: 4px solid black;
+margin-top: 3rem;
+margin-bottom: 3rem;
 }
 .product-description{
   background-color: black;
@@ -115,4 +117,28 @@ footer{
   margin-top: 4rem;
   display: flex;
   align-items: center;
+}
+
+
+/*FIRST MEDIA QUERY <1024PX*/
+@media only screen and (max-width: 1024px){
+  .product{
+    width: 47%;
+  }
+  .glasses{
+    display: none;
+  }
+  .product-container .container, .business-info .container{
+    width: 100%;
+  }
+  #mobile-nav{
+    display: block;
+  }
+  nav .container{
+    justify-content: center;
+    width: 100%;
+  }
+  .desktop-nav span{
+    display: none;
+  }
 }
